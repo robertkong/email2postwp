@@ -21,7 +21,7 @@ catch (e) {
  var wppassword = process.env.EMAIL2POSTWP_WPPASSWORD || WPSettings.password;
 
 
- var WP = require( 'wordpress-rest-api' );
+ var WP = require( 'wpapi' );
 
 // You must authenticate to be able to POST (create) a post
 var wp = new WP({
