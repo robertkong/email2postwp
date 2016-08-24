@@ -1,0 +1,12 @@
+(function(){
+    'use strict';
+    var WPSettings = {
+        username: 'ZZZZZ',
+        password: 'ZZZZZ',
+        endpoint: 'http://ZZZZZHOST/wp-json',
+        allowed_emails: 'email1,email2,...',
+        post_status: 'draft', // 'publish'
+        post_category_ids: '-1,-2,...' // categories ids, separated by comma
+    };
+    module.exports = WPSettings;
+})();

@@ -1,0 +1,9 @@
+(function(){
+    'use strict';
+   var ImapSettings = {
+       username: 'TBD@gmail.com',
+       password: 'TBD',
+       host: 'imap.gmail.com'
+   };
+   module.exports = ImapSettings;
+})();
