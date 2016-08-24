@@ -1,7 +1,7 @@
 var WPSettings = {};
 
 try {
-    WPSettings = require('./wpsettings');
+    WPSettings = require('../wpsettings');
 }
 catch (e) {
 

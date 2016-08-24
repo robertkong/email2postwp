@@ -3,7 +3,7 @@ var MailListener = require("mail-listener2");
 var ImapSettings;
 
 try {
-    ImapSettings = require('./imapsettings');
+    ImapSettings = require('../imapsettings');
 }
 catch (e) {
 

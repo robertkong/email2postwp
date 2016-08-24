@@ -3,7 +3,7 @@ var MailListener = require("mail-listener2");
 var ImapSettings;
 
 try {
-    ImapSettings = require('./imapsettings');
+    ImapSettings = require('../imapsettings');
 }
 catch (e) {
 
@@ -26,7 +26,7 @@ catch (e) {
  var WPSettings = {};
 
  try {
-     WPSettings = require('./wpsettings');
+     WPSettings = require('../wpsettings');
  }
  catch (e) {
 
@@ -39,6 +39,9 @@ catch (e) {
   *  EMAIL2POSTWP_WPENDPOINT: wordpress rest api endpoint
   *  EMAIL2POSTWP_WPUSERNAME: wordpress basic auth username.
   *  EMAIL2POSTWP_WPPASSWORD: wordpress basic auth password.
+  *  EMAIL2POSTWP_WPPOST_STATUS: new post status (default is draft).
+  *  EMAIL2POSTWP_WPPOST_CATEGORY_IDS: new post category ids (default is none).
+  *  EMAIL2POSTWP_WPALLOWED_EMAILS: the list of sender emails that post will be created (default is all).
   */
   var wpsettings = {};
   wpsettings.endpoint = process.env.EMAIL2POSTWP_WPENDPOINT || WPSettings.endpoint;
