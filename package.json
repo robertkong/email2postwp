@@ -1,34 +1,41 @@
 {
-    "name": "email2postwp",
-    "version": "0.6.1",
-    "description": "a modudle that retrieves email from IMAP server and create posts in WordPress sites",
-    "keywords": ["email", "mail", "imap", "post", "wp", "wordpress"],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/robertkong/email2postwp"
-    },
-    "bugs": {
-        "url": "https://github.com/robertkong/email2postwp/issues"
-    },
-    "main": "lib/email2postwp.js",
-    "bin": {
-        "email2postwp": "bin/index.js"
-    },
-    "scripts": {
-        "start": "node bin/index.js",
-        "test": "test"
-    },
-    "author": {
-        "name": "Robert Kong",
-        "email": "kongrobert@yahoo.com"
-    },
-    "license": "ISC",
-    "engines": {
-        "node": ">=0.10.0"
-    },
-    "dependencies": {
-        "emailreplyparser": "0.0.5",
-        "mail-listener2": "^0.1.8",
-        "wpapi": "^0.9.1"
-    }
+  "name": "email2postwp",
+  "version": "0.6.2",
+  "description": "a modudle that retrieves email from IMAP server and create posts in WordPress sites",
+  "keywords": [
+    "email",
+    "mail",
+    "imap",
+    "post",
+    "wp",
+    "wordpress"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertkong/email2postwp"
+  },
+  "bugs": {
+    "url": "https://github.com/robertkong/email2postwp/issues"
+  },
+  "main": "lib/email2postwp.js",
+  "bin": {
+    "email2postwp": "bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "test"
+  },
+  "author": {
+    "name": "Robert Kong",
+    "email": "kongrobert@yahoo.com"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "emailreplyparser": "0.0.5",
+    "mail-listener2": "^0.1.8",
+    "wpapi": "^0.9.1"
+  }
 }
