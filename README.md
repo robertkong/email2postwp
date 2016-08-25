@@ -2,13 +2,11 @@
 
 # email2postwp
 
-This is a simple module that retrieves new emails from an IMAP server and creates posts to a WordPress site.
+This is a simple module that retrieves new emails from an IMAP server and creates posts in a WordPress site.
 
 ## Prerequisite
 
 A working IMAP email address and a WordPress with WP Rest API enabled with basic authentication.
-
-To use this module, use imapsettings.js.sample and wpsettings.js.sample as a base to configure your integration settings.
 
 ## Installation
 
@@ -20,14 +18,14 @@ $ npm install -g email2postwp
 
 ## Configuration
 
-The email2postwp is configurable through environment variables. There are several variable available:
+The email2postwp is configurable through environment variables. There are several variables available:
 
 | Environment variable | Description |
 |----------------------|-------------|
-|  EMAIL2POSTWP_HOST|imap mail host
+|  EMAIL2POSTWP_HOST|imap mail host.
 |  EMAIL2POSTWP_USERNAME|imap username.
 |  EMAIL2POSTWP_PASSWORD|imap password.
-|  EMAIL2POSTWP_WPENDPOINT|wordpress rest api endpoint
+|  EMAIL2POSTWP_WPENDPOINT|wordpress rest api endpoint.
 |  EMAIL2POSTWP_WPUSERNAME|wordpress basic auth username.
 |  EMAIL2POSTWP_WPPASSWORD|wordpress basic auth password.
 |  EMAIL2POSTWP_WPPOST_STATUS|new post status (default is draft).
