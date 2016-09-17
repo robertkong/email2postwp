@@ -23,6 +23,8 @@
   },
   "scripts": {
     "start": "node bin/index.js",
+    "build": "./node_modules/.bin/webpack",
+    "dev-server": "node_modules/.bin/http-server -p 3000 dist/",
     "test": "test"
   },
   "author": {
@@ -37,5 +39,13 @@
     "emailreplyparser": "0.0.5",
     "mail-listener2": "^0.1.8",
     "wpapi": "^0.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-react": "^3.1.0",
+    "gulp-uglify": "^2.0.0"
   }
 }
