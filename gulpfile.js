@@ -23,13 +23,19 @@ gulp.task('copy', function(){
   gulp.src(path.HTML)
     .pipe(gulp.dest(path.DEST));
 });
-gulp.task('watch-src', ['transform', 'copy'], function(next) {
-    gulp.watch(path.ALL, function() {
-        console.log("Before source watch done...");
-        browserSync.reload();
-    });
-    next();
+// create a task that ensures the `js` task is complete before
+// reloading browsers
+gulp.task('watch4transform', ['transform'], function (done) {
+    browserSync.reload();
+    done();
 });
+
+gulp.task('watch4copy', ['copy'], function (done) {
+    browserSync.reload();
+    done();
+});
+
+
 gulp.task('dev', ['transform', 'copy'], function(next) {
     console.log("dev done...");
     next();
@@ -63,6 +69,8 @@ gulp.task('serve', ['dev'], function (done) {
 
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
-    gulp.watch(path.ALL, ['watch-src']);
+    gulp.watch(path.JS, ['watch4transform']);
+
+    gulp.watch(path.HTML, ['watch4copy']);
 
 });
